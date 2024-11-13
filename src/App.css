@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* General reset for all elements */
+* {
+    margin: 0; /* Removes default margin from all elements */
+    padding: 0; /* Removes default padding from all elements */
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width/height */
+    font-family: 'Poppins', sans-serif; /* Sets a global font called 'Poppins' for all text */
+}
+
+/* Styling for the main body of the page */
+body {
+    display: flex; /* Uses flexbox to easily align items */
+    justify-content: center; /* Centers items horizontally (left ->  right) */
+    align-items: center; /* Centers items vertically (top ->  bottom) */
+    min-height: 100vh; /* Ensures the body takes up the entire height of the screen */
+    background: linear-gradient(135deg, #e0f7fa 0%, #b2dfdb 100%); /* Sets a light greenish-blue gradient background for a cool, relaxing effect */
+}
+
+
+
+/* Style for the navbar */
+.navbar {
+  background-color: #333; /* Dark background */
+  padding: 40px 50px; /* Some padding to space out the navbar */
+  text-align: center; /* Center the links */
+}
+
+.navbar a {
+  color: white; /* White text for the links */
+  padding: 10px 20px; /* Some space around the links */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.2rem; /* Slightly larger text */
+  margin: 0 10px; /* Add space between the links */
+}
+
+
+
+/* Style for the Home section */
+.home {
+  background-color: #0095ff; /* Bright blue background */
+  color: white; /* White text */
+  padding: 50px; /* Padding around the section */
+  text-align: center; /* Center the text */
+}
+
+.home h1 {
+  font-size: 3rem; /* Large text for the heading */
+}
+
+/* Style for the About section */
+.about {
+  background-color: #f8f8f8; /* Light grey background */
+  color: #333; /* Dark text */
+  padding: 50px; /* Padding around the section */
+  text-align: center; /* Center the text */
+}
+
+.about h1 {
+  font-size: 3rem; /* Large text for the heading */
+}
+
+/* Style for the Contact section */
+.contact {
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  padding: 50px; /* Padding around the section */
+  text-align: center; /* Center the text */
+}
+
+.contact h1 {
+  font-size: 3rem; /* Large text for the heading */
+}
+
+/* Make the layout responsive for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar a {
+    font-size: 1rem; /* Make the links smaller on smaller screens */
+    padding: 8px 15px; /* Less padding on smaller screens */
+  }
+
+  .home, .about, .contact {
+    padding: 30px; /* Less padding on smaller screens */
+  }
+
+  .home h1, .about h1, .contact h1 {
+    font-size: 2rem; /* Smaller headings on smaller screens */
+  }
+}
+
+
+/* Main container for the login form */
+.login-box {
+    display: flex; /* Uses flexbox to layout the content */
+    justify-content: center; /* Centers the content inside the login box */
+    flex-direction: column; /* Stacks child elements vertically */
+    width: 440px; /* Fixed width for the login box */
+    padding: 30px; /* Adds spacing inside the box to prevent content from touching edges */
+    background: white; /* White background for contrast with the page background */
+    border-radius: 12px; /* Rounds the corners of the box for a softer look */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the box to create depth */
+}
+
+/* Header section of the login box (where the title goes) */
+.login-header {
+    text-align: center; /* Centers the header text */
+    margin: 20px 0 40px 0; /* Adds spacing: 20px at the top, 40px at the bottom */
+}
+
+/* Styling for the header text inside the login box */
+.login-header header {
+    color: #388e3c; /* Sets the text color to a calming green */
+    font-size: 30px; /* Increases the font size for the header */
+    font-weight: 600; /* Makes the header text bold */
+}
+
+/* Styling for the input fields (username, password, etc.) */
+.input-box .input-field {
+    width: 100%; /* The input field takes up the full width of its parent container */
+    height: 60px; /* Sets a fixed height for the input fields */
+    font-size: 17px; /* Sets the size of the text inside the input field */
+    padding: 0 25px; /* Adds padding inside the input field for spacing between text and border */
+    margin-bottom: 15px; /* Adds space between each input field */
+    border-radius: 30px; /* Rounds the corners of the input fields */
+    border: 1px solid #a5d6a7; /* Gives the input a soft green border */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05); /* Adds a subtle shadow to lift the input field */
+    outline: none; /* Removes the default browser outline when the input is focused */
+    transition: 0.3s; /* Adds smooth transitions to hover/focus effects */
+}
+
+/* Styling for placeholder text (inside input fields before typing) */
+::placeholder {
+    font-weight: 500; /* Makes the placeholder text slightly bold */
+    color: #555; /* Dark gray color for placeholder text for better readability */
+}
+
+/* Focused input styling (when the user clicks on or types into an input field) */
+.input-field:focus {
+    width: 105%; /* Slightly increases the width to make the input field stand out on focus */
+    border-color: #81c784; /* Changes the border to a brighter green when focused */
+    box-shadow: 0px 8px 15px rgba(129, 199, 132, 0.4); /* Adds a stronger green shadow when focused */
+}
+
+/* Container for the 'Forgot password' text and the checkbox (keeps them spaced out) */
+.forgot {
+    display: flex; /* Flexbox used to align items horizontally */
+    justify-content: space-between; /* Spaces the elements (checkbox and link) evenly */
+    margin-bottom: 40px; /* Adds space below this section */
+}
+
+/* Styling for section elements (used for the checkbox and accompanying text) */
+section {
+    display: flex; /* Flexbox used to align checkbox and text */
+    align-items: center; /* Vertically centers the items in this section */
+    font-size: 14px; /* Sets the text size slightly smaller */
+    color: #555; /* Dark gray color for the text */
+}
+
+/* Checkbox specific styling */
+#check {
+    margin-right: 10px; /* Adds space between the checkbox and its label */
+}
+
+/* Link (anchor tag) styling */
+a {
+    text-decoration: none; /* Removes the underline from links */
+}
+
+/* Link styling when hovered over */
+a:hover {
+    text-decoration: underline; /* Underlines the link on hover to indicate it's clickable */
+}
+
+/* Specific color for links inside section tags */
+section a {
+    color: #555; /* Dark gray color to keep links subtle */
+}
+
+/* Container for the submit button */
+.input-submit {
+    position: relative; /* Allows positioning of child elements inside (like the label) */
+}
+
+/* Styling for the submit button */
+.submit-btn {
+    width: 100%; /* Full width button */
+    height: 60px; /* Fixed height for the button */
+    background: #4caf50; /* Green background for the button */
+    border: none; /* Removes the default button border */
+    border-radius: 30px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Label inside the submit button (centered text) */
+.input-submit label {
+    position: absolute; /* Positioning allows it to stay centered in the button */
+    top: 50%; /* Vertically centers the label */
+    left: 50%; /* Horizontally centers the label */
+    color: #fff; /* White color for the label text */
+    transform: translate(-50%, -50%); /* Precisely centers the label using transform */
+    cursor: pointer; /* Changes the cursor to a pointer over the label */
+}
+
+/* Submit button hover effect */
+.submit-btn:hover {
+    background: #66bb6a; /* Lightens the green background on hover */
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+/* Styling for the sign-up link at the bottom */
+.sign-up-link {
+    text-align: center; /* Centers the text */
+    font-size: 15px; /* Medium font size */
+    margin-top: 20px; /* Adds space at the top */
+}
+
+/* Link styling inside the sign-up section */
+.sign-up-link a {
+    color: #388e3c; /* Green color for the sign-up link */
+    font-weight: 600; /* Makes the text slightly bold */
+}
+
+
