@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Contact from './Contact';
@@ -28,3 +29,16 @@ const Home = () => {
 };
 
 export default Home;
+=======
+import React from 'react'
+
+const Home = () => {
+  return (
+    <div>Home
+    <h1>This is the Home page</h1>
+    </div>
+  )
+}
+
+export default Home
+>>>>>>> origin/main

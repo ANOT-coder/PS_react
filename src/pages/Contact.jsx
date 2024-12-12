@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 
 const Contact = () => {
@@ -19,4 +20,20 @@ const Contact = () => {
   )
 }
 
+=======
+import React from 'react'
+
+const Contact = () => {
+  return (
+    <div> 
+    <h1>Contact</h1>
+        <p>Prasanna Shakya</p>
+        <p> 0431ps@gmail.com</p>
+
+    
+    </div>
+  )
+}
+
+>>>>>>> origin/main
 export default Contact
